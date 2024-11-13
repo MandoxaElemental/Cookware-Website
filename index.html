@@ -11,15 +11,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./assets/Logo.svg" alt="Bootstrap" width="90" height="90" />
+          <img src="./assets/Logo.svg" alt="Bootstrap" width="70" height="70" />
         </a>
         <button
           class="navbar-toggler"
@@ -38,30 +35,36 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">COOKWARE</a>
+              <a class="nav-link" href="#"><h6 class="nav-hover">COOKWARE</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BAKEWARE</a>
+              <a class="nav-link" href="#"><h6 class="nav-hover">BAKEWARE</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ACCESSORIES</a>
+              <a class="nav-link" href="#"><h6 class="nav-hover">ACCESSORIES</h6></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SALE</a>
+              <a class="nav-link" href="#"><h6 class="nav-hover sale">SALE</h6></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Hero -->
     <div class="hero">
-      <img class="hero" src="./assets/hero.jpg" alt="hero image" />
+      <img class="hero" src="./assets/hero.jpg" alt="hero image"/>
+      <div class="position-relative">
+        <div class="position-absolute bottom-0 start-0 hero-box">
+          <p>Cookware built to last</p>
+        </div>
+      </div>
     </div>
     <div class="promo">
       <p>Sale $10 off when you spend $150</p>
     </div>
 
     <!-- Start Cooking (Grid) -->
-    <div>
+    <div class="division">
       <h1>Start Cooking</h1>
       <div class="grid-box">
         <div class="grid-items">
@@ -104,85 +107,127 @@
     </div>
 
     <!-- New Arrivals (bootstrap) -->
-    <h1>New Arrivals</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <img id="newArrivalsPics" src="/assets/NewArrivals1.jpg" alt="Fall Collection New Arrivals">
-                <h3>Fall Collection</h3>
-                <p>Our 2023 Fall Collection just came out with beautiful autumn color cookware</p>
-                <p>Color: <b>Apple Cinnamon</b></p>
-                <button id="color-1" class="color-btn"></button> <button id="color-2" class="color-btn"></button> <button id="color-3" class="color-btn"></button> <button id="color-4" class="color-btn"></button>
-            </div>
-            <div class="col-6">
-                <img id="newArrivalsPics" src="/assets/NewArrivals2.jpg" alt="Nonsick Wock New Arrivals">
-                <h3>Nonstick Wok 14 Inch</h3>
-                <p>The nonstick wok is one of our most popular cookware. Perfect for everyday stir fry.</p>
-            </div>
-        </div>
+    <div class="division">
+      <h1>New Arrivals</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <img id="newArrivalsPics" src="/assets/NewArrivals1.jpg" alt="Fall Collection New Arrivals">
+                  <h3>Fall Collection</h3>
+                  <p>Our 2023 Fall Collection just came out with beautiful autumn color cookware</p>
+                  <p>Color: <b id="colorName">Apple Cinnamon</b></p>
+                  <button id="color-1" class="color-btn"></button>
+                  <button id="color-2" class="color-btn"></button>
+                  <button id="color-3" class="color-btn"></button>
+                  <button id="color-4" class="color-btn"></button>
+              </div>
+              <div class="col-6">
+                  <img id="newArrivalsPics" src="/assets/NewArrivals2.jpg" alt="Nonsick Wock New Arrivals">
+                  <h3>Nonstick Wok 14 Inch</h3>
+                  <p>The nonstick wok is one of our most popular cookware. Perfect for everyday stir fry.</p>
+              </div>
+          </div>
+      </div>
     </div>
 
     <!-- Best Sellers (Flex-Box) -->
-    <h1>Best Sellers</h1>
-
-    <div class="flex-box-sellers">
-      <div class="bestSellers">
-        <img
-          id="bestSellerImg"
-          src="./assets/BestSeller1.jpg"
-          alt="Stock Pot Best Seller 1"
-          class="zoom"
-        />
-        <h3>Stock Pot</h3>
-        <p>
-          Our fall bakeware is back again with warm fall colors. Check our our
-          fall line of bakeware from fall colored pots to baking pans.
-        </p>
-        <button id="main-btn">SHOP NOW</button>
-      </div>
-      <div class="bestSellers">
-        <img
-          id="bestSellerImg"
-          src="./assets/BestSeller2.jpg"
-          alt="Stock Pot Best Seller 2"
-          class="zoom"
-        />
-        <h3>Stock Pot</h3>
-        <p>
-          The Stock Pot is a cookware that is revolutionizing the way you cook!
-          With its innovative design and advanced materials. The Stock Pot is
-          the perfect choice for any kitchen. Its unique combination of ceramic
-          and aluminum ensures that your food cooks evenly and quickly, while
-          its non-stick coating ensures that nothing sticks to the surface.
-          Whether you're cooking for one or the whole family, the Stock Pot is
-          the perfect choice!
-        </p>
-        <button id="main-btn">SHOP NOW</button>
-      </div>
-      <div class="bestSellers">
-        <img
-          id="bestSellerImg"
-          src="./assets/BestSeller3.jpg"
-          alt="Sauce Pan Best Seller 3"
-          class="zoom"
-        />
-        <h3>Sauce Pan</h3>
-        <p>
-          The Sauce Pan is the perfect cookware for making a variety of sauces,
-          stews, soups and more. Its stainless steel construction ensures even
-          heat distribution for better and faster cooking. No matter what you're
-          cooking, you can count on the Sauce Pan to help you cook like a pro.
-        </p>
-        <button id="main-btn">SHOP NOW</button>
+    <div class="division">
+      <h1>Best Sellers</h1>
+  
+      <div class="flex-box-sellers">
+        <div class="bestSellers">
+          <img
+            id="bestSellerImg"
+            src="./assets/BestSeller1.jpg"
+            alt="Stock Pot Best Seller 1"
+            class="zoom"
+          />
+          <h3>Stock Pot</h3>
+          <p>
+            Our fall bakeware is back again with warm fall colors. Check our our
+            fall line of bakeware from fall colored pots to baking pans.
+          </p>
+          <button id="main-btn">SHOP NOW</button>
+        </div>
+        <div class="bestSellers">
+          <img
+            id="bestSellerImg"
+            src="./assets/BestSeller2.jpg"
+            alt="Stock Pot Best Seller 2"
+            class="zoom"
+          />
+          <h3>Stock Pot</h3>
+          <p>
+            The Stock Pot is a cookware that is revolutionizing the way you cook!
+            With its innovative design and advanced materials. The Stock Pot is
+            the perfect choice for any kitchen. Its unique combination of ceramic
+            and aluminum ensures that your food cooks evenly and quickly, while
+            its non-stick coating ensures that nothing sticks to the surface.
+            Whether you're cooking for one or the whole family, the Stock Pot is
+            the perfect choice!
+          </p>
+          <button id="main-btn">SHOP NOW</button>
+        </div>
+        <div class="bestSellers">
+          <img
+            id="bestSellerImg"
+            src="./assets/BestSeller3.jpg"
+            alt="Sauce Pan Best Seller 3"
+            class="zoom"
+          />
+          <h3>Sauce Pan</h3>
+          <p>
+            The Sauce Pan is the perfect cookware for making a variety of sauces,
+            stews, soups and more. Its stainless steel construction ensures even
+            heat distribution for better and faster cooking. No matter what you're
+            cooking, you can count on the Sauce Pan to help you cook like a pro.
+          </p>
+          <button id="main-btn">SHOP NOW</button>
+        </div>
       </div>
     </div>
 
     <!-- Reviews -->
+    <div class="division">
     <h1>Reviews</h1>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle-x reviews">
+                <h2>Wok Star!</h2>
+                <p>I love cooking using the cast iron wok for everyday family meals. With the wok it makes the food I make turn into restaurant quality meals. I bought this wok for my parents and also my siblings</p>
+                <h5>David Jones</h5>
+              </div>
+            </div>
+            <img class="review-img" src="./assets/Reviews1.jpg" alt="reviews1">
+          </div>
+          <div class="col-4">
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle-x reviews">
+                <h2>Built To Last</h2>
+                <p>Bought the cast iron pot and i lasted longer than the other brands I bought. Not only are the pots durable but the colors of the pots are so nice!</p>
+                <h5>Danielle Johnson</h5>
+              </div>
+            </div>
+            <img class="review-img" src="./assets/Reviews2.jpg" alt="reviews2">
+          </div>
+          <div class="col-4">
+            <div class="position-relative">
+              <div class="position-absolute top-50 start-50 translate-middle-x reviews">
+                <h2>Best Cookware!</h2>
+                <p>I love all the cookware. I just bought my 4th pan and love it so much! I love the color of the pot and how durable the pots are. I've recommended the cast iron pot to all my friends and family.</p>
+                <h5>Michelle</h5>
+              </div>
+            </div>
+            <img class="review-img" src="./assets/Reviews3.jpg" alt="reviews3">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div>
-      <footer>
+      <footer class="footer-grid">
         <div id="About-Our-Home">
           <p><b>ABOUT OUR HOME</b></p>
           <ul class="no-bullets">
@@ -193,7 +238,6 @@
           </ul>
         </div>
         <div id="Products">
-          <p>
             <p><b>PRODUCTS</b></p>
             <ul class="no-bullets">
               <li>COOKWARE</li>
@@ -201,10 +245,8 @@
               <li>BEST SELLERS</li>
               <li>ACCESSORIES</li>
             </ul>
-          </p>
         </div>
         <div id="Customer-Service">
-          <p>
             <p><b>CUSTOMER SERVICE</b></p>
             <ul class="no-bullets">
               <li>CONTACT US</li>
@@ -212,13 +254,12 @@
               <li>RETURNS & EXCHANGES</li>
               <li>FAQS</li>
             </ul>
-          </p>
         </div>
         <div id="Subscribe">
           <p>Subscribe to our newsletter to be the first to know about new products and special events.</p>
             <input type="email" id="email" name="email" placeholder="Enter email address"> <button id="subscribe-btn">SUBSCRIBE</button>
             <br>
-            <div>
+            <div class="social">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
               </svg>
@@ -236,6 +277,7 @@
       </footer>
     </div>
 
+    <script src="./scripts/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

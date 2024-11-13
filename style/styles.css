@@ -1,14 +1,45 @@
+@font-face {
+    font-family: Roboto;
+    src: url('/font/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('/font/Roboto/Roboto-Bold.ttf');
+}
+
 body{
     font-family: Roboto;
     background-color: #EDEDED;
 }
 
+.hero-box{
+    background-color: #000000bc;
+    padding: 20px;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+}
+
 h1{
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: Roboto-Bold;
 }
 
 h3{
     padding-top: 10px;
+}
+
+.sale{
+    color: #982A1C;
+}
+
+
+.nav-hover:hover{
+    color: #b73b2a8e;
 }
 
 #main-btn{
@@ -25,6 +56,10 @@ h3{
     font-weight: bold;
 }
 
+.division{
+    padding: 50px 0px;
+}
+
 .color-btn{
     height: 25px;
     width: 25px;
@@ -34,7 +69,6 @@ h3{
 
 #color-1{
     background-color: #EA2D2C;
-    border: black solid;
 }
 #color-2{
     background-color: #FB5108;
@@ -44,6 +78,19 @@ h3{
 }
 #color-4{
     background-color: #353535;
+}
+
+.btnBorder{
+    border: black solid;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+.btnBorderNon{
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
 }
 
 .centering{
@@ -96,6 +143,22 @@ h3{
   }
 
 
+.reviews{
+    color: white;
+    background-color: #0000009f;
+    width: 80%;
+    height: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.reviews > p{
+    font-size: 12px;
+    text-align: left;
+}
+
 
 .flex-box-sellers{
     display: flex;
@@ -114,15 +177,27 @@ h3{
     border-radius: 10px;
 }
 
+
 #newArrivalsPics{
     width: 100%;
     height: 60%;
     border-radius: 10px;
+    background-color: black;
+}
+#newArrivalsPics:hover{
+    filter: brightness(70%);
 }
 
 footer{
     background-color: #1E2C20;
     color: white;
+}
+
+.review-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 ul.no-bullets{
@@ -133,24 +208,57 @@ ul.no-bullets{
 
 li{
     font-size: 12px;
+    margin-top: 5px;
+}
+
+.social > svg{
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #email{
     height: 40px;
+    width: 60%;
 }
 
 #subscribe-btn{
     background-color: #ffffff00;
     color: #FFFFFF;
     border: solid #FFFFFF;
-    width: 150px;
+    width: 120px;
     height: 40px;
 }
 
-@media (max-width: 992px){
+.footer-grid{
+    padding: 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#Subscribe{
+    grid-column: 5 / 7;
+}
+
+@media (max-width: 1400px) and (min-width: 1201px){
+
+}
+
+@media (max-width: 1200px) and (min-width: 993px){
+
+}
+
+@media (max-width: 992px) and (min-width: 769px){
     .flex-box-sellers{
-        padding: 10px;
+        gap: 10px;
         flex-direction: column;
-        align-content: center;
+        align-items: center;
     }
+}
+
+@media (max-width: 768px) and (min-width: 577px){
+
+}
+
+@media (max-width: 576px){
+
 }
