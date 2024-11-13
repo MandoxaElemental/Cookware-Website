@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    color: #982A1C;
+}
+.hero{
+    width: 100%;
+}
+
+.promo{
+    color: white;
+    text-align: center;
+    background-color: #1E2C20;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    padding: 10px;
+}
+.grid-items{
+    width: 300px;
+    height: 402px;
+}
+
+#startCooking{
+    width: 300px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+  .zoom:hover {
+    transform: scale(1.05);
+    width: 380px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+
+.flex-box-sellers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bestSellers{
+    border-radius: 10px;
+    border: solid black;
+    padding: 24px;
+    width: 380px;
+  }
+#bestSellerImg{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#newArrivalsPics{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 992px){
+    .flex-box-sellers{
+        padding: 10px;
+        flex-direction: column;
+        align-content: center;
+    }
+}
