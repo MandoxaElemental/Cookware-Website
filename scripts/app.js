@@ -24,7 +24,7 @@ btn2.addEventListener('click', function(e){
 });
 btn3.addEventListener('click', function(e){
     document.getElementById('colorName');
-    colorName.innerText = "Corn";
+    colorName.innerText = "Buttery Corn";
     btn1.className = "btnBorderNon";
     btn2.className = "btnBorderNon";
     btn3.className = "btnBorder";
