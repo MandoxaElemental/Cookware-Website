@@ -110,7 +110,7 @@ h3{
     text-align: center;
     background-color: #1E2C20;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .grid-box{
@@ -239,26 +239,38 @@ li{
     grid-column: 5 / 7;
 }
 
-@media (max-width: 1400px) and (min-width: 1201px){
-
-}
-
-@media (max-width: 1200px) and (min-width: 993px){
-
-}
-
-@media (max-width: 992px) and (min-width: 769px){
+@media (max-width: 992px){
     .flex-box-sellers{
         gap: 10px;
         flex-direction: column;
         align-items: center;
     }
+    .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 768px) and (min-width: 577px){
+@media (max-width: 1400px) and (min-width: 1200px){
 
 }
 
-@media (max-width: 576px){
+@media (max-width: 1199px) and (min-width: 992px){
+
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .review-img{
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px){
+
+}
+
+@media (max-width: 575px){
 
 }
