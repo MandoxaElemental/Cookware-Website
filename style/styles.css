@@ -186,7 +186,7 @@ h4{
     border-radius: 10px;
     border: solid black;
     padding: 24px;
-    width: 320px;
+    width: 350px;
   }
 .bestSellers > p{
     font-size: 12px;
@@ -227,8 +227,11 @@ ul.no-bullets{
   }
 
 li{
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 5px;
+}
+li:hover{
+    opacity: 70%;
 }
 
 .social > svg{
@@ -369,10 +372,30 @@ li{
         padding: 80px 20px;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(3, 1fr);
+        font-size: 25px;
+    }
+    li{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    #email{
+        height: 60px;
+        width: 50%;
+    }
+    
+    #subscribe-btn{
+        background-color: #ffffff00;
+        color: #FFFFFF;
+        border: solid #FFFFFF;
+        width: 35%;
+        height: 60px;
     }
 
     .social > svg{
-        margin: 10px 20px;
+        margin: 10px 15px;
+        width: 40px;
+        height: 40px;
     }
 
     #Subscribe{
@@ -390,6 +413,10 @@ li{
     div > h1{
         font-size: 60px;
     }
+
+    ul.no-bullets{
+        font-size: 40px;
+      }
 }
 
 @media (max-width: 810px){
