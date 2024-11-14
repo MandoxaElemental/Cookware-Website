@@ -307,7 +307,7 @@ li:hover{
     }
 
     h3{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .col-12 > h3{
@@ -319,7 +319,7 @@ li:hover{
 
     .grid-items > h3{
         margin: 0px 0px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .nav-hover{
