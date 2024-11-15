@@ -21,5 +21,5 @@ In this project, you will take the following mockup and make it into a fully fun
 [Cookware Website GitHub Repository Link](https://github.com/MandoxaElemental/Cookware-Website)
 
 
-This has been Peer Reviewed By: 
-> Comments: 
+This has been Peer Reviewed By: Bowen Henry
+> Comments: Add a bit of margin between the cards and your header on the best sellers section. Add an underline to the navbar at the top for all of the options. For your mobile version, make the font smaller for all the headers for each section. For the mobile version on the start cooking option, change the grid so it's 2 rows with 2 boxes in each row, that's just what it looks like on the figma. Also make the font size smaller for the mobile version for the email part in the footer. Also add in a bit of margin in the footer too for the mobile version because it's a bit crammed. Everything else looks amazing! I like the little details you added in the footer, like the option to type in an email and the hover effects on all of the tags. Great work!
