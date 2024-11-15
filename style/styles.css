@@ -417,9 +417,9 @@ li:hover{
         background-color: #ffffff00;
         color: #1E2C20;
         border: solid #1E2C20;
-        width: 250px;
+        width: 200px;
         height: 60px;
-        font-size: 30px;
+        font-size: 25px;
     }
     div > h1{
         font-size: 60px;
@@ -432,6 +432,23 @@ li:hover{
 
 @media (max-width: 810px){
     .grid-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-items{
+        width: 250px;
+        height: 300px;
+    }
+    
+    #startCooking{
+        width: 220px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 520px){
+    .grid-box{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .grid-items{
@@ -440,8 +457,8 @@ li:hover{
     }
     
     #startCooking{
-        width: 250px;
-        height: 225px;
+        width: 220px;
+        height: 250px;
         object-fit: cover;
         border-radius: 10px;
     }
